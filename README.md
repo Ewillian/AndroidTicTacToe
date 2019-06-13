@@ -4,7 +4,7 @@
 
 
 
-## Objectives 
+## Objective
 
 Make an functional Tic Tac Toe Game on Android Studio.
 

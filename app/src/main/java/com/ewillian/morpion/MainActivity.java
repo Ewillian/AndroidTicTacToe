@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Get location
                 int resId = getResources().getIdentifier(buttonId, "id", getPackageName());
                 //Get buttons
-                buttonArray[i][j] =  findViewById(resId);
+                buttonArray[i][j] = findViewById(resId);
                 buttonArray[i][j].setOnClickListener(this);
             }
         }
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                resetGame();
             }
         });
     }
@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             draw();
         } else {
             playerOneTurn = !playerOneTurn;
+            if (playerOneTurn){
+                Toast.makeText(this, "Player 1 play !", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "Player 2 play !", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -125,6 +130,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void playerTwoWins(){
+        scoreTwo++;
+        Toast.makeText(this, "Player 2 Wins", Toast.LENGTH_SHORT).show();
         updatePointsText();
         resetBoard();
     }
@@ -146,7 +153,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void updatePointsText() {
         textViewOne.setText("Player 1: "+scoreOne);
-        textViewOne.setText("Player 1: "+scoreTwo);
+        textViewTwo.setText("Player 2: "+scoreTwo);
     }
 
+    private void resetGame() {
+        Toast.makeText(this, "Reset !", Toast.LENGTH_SHORT).show();
+        scoreOne = 0;
+        scoreTwo = 0;
+        updatePointsText();
+        resetBoard();
+    }
 }
