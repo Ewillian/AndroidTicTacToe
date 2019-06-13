@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/uiContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/str_Score"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_player1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_player1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/str_player1"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_player2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_score" />
+
+        <TextView
+            android:id="@+id/tv_player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/str_player2"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_player1" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_reset"
+            android:textSize="32sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_player2" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uiContent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_00"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button_01"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button_02"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_10"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button_11"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button_12"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_20"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button_21"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button_22"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="36sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

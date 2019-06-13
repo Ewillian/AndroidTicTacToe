@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Morpion</string>
+    <string name="str_Score">Score :</string>
+    <string name="str_player1">Player 1 :</string>
+    <string name="str_player2">Player 2 :</string>
+    <string name="str_reset">Reset</string>
+</resources>
