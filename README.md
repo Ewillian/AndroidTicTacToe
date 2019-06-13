@@ -20,7 +20,7 @@ Like any other tic tac toe, we make an ArrayList of buttons and we check their c
 [2][0] [2][1] [2][2]
 ``````
 
-Each `[] []` is a button (or coordinates) and we check the conditions of victory.
+Each `[] []` is a button (or coordinates) and check the conditions of victory.
 
 
 
