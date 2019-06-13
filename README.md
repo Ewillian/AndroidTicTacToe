@@ -24,6 +24,12 @@ Each `[] []` is a button (or coordinates of them) and we check the conditions of
 
 
 
+## How to install
+
+Download apk-release from `/app/release` on your phone and install it.
+
+
+
 ## Project's member
 
 - Le Coq Guillaume
