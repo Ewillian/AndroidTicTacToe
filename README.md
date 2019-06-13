@@ -6,13 +6,13 @@
 
 ## Objective
 
-Make an functional Tic Tac Toe Game on Android Studio.
+Make a functional Tic Tac Toe Game on Android Studio.
 
 
 
 ## How it works
 
-Like any basically tic tac toe, we makes an arrayList of buttons and we check their contents using this schema :
+Like any other tic tac toe, we make an ArrayList of buttons and we check their contents using this pattern:
 
 ``````
 [0][0] [0][1] [0][2]
@@ -20,7 +20,7 @@ Like any basically tic tac toe, we makes an arrayList of buttons and we check th
 [2][0] [2][1] [2][2]
 ``````
 
-Each `[] []` is a button (or coordinates of them) and we check the conditions of victory.
+Each `[] []` is a button (or coordinates) and we check the conditions of victory.
 
 
 
